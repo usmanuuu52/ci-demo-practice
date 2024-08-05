@@ -18,7 +18,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 4{{ matrix.version }}
+          python-version: ${{ matrix.version }}
 
       - name: install flake8
         run: |
